@@ -50,4 +50,3 @@ Switch   Dual_Switch_A2         "Switch-2 [MAP(unifi.map):%s]"             { cha
 Switch   Dual_GetStatus_A       "Status [MAP(unifi.map):%s]"               { channel="mqtt:topic:defaultbroker:dual_01:GetStatus" }
 String   Dual_Version_A         "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:dual_01:Version" }
 
-

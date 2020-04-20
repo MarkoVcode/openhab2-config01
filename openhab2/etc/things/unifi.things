@@ -1,5 +1,5 @@
-Bridge unifi:controller:home "UniFi Controller" [ host="{host}", port={port}, username="{username}", password="{password}", refresh=10 ] {
-	Thing wirelessClient mareksPhone "Marek's phone" [ cid="a6:20:a5:50:e0:93", site="default", considerHome=30 ]
-        Thing wirelessClient liwiasPhone "Liwia's phone" [ cid="9a:8a:8b:9a:b1:b6", site="default", considerHome=30 ]
-	Thing wirelessClient weynisPhone "Weyni's phone" [ cid="6c:c7:ec:af:f9:06", site="default", considerHome=30 ]
+Bridge unifi:controller:home "UniFi Controller" [ host="_host_", port=999999, username="_username_", password="_password_", refresh=10 ] {
+    Thing wirelessClient mareksPhone "Marek's phone" [ cid="a6:20:a5:50:e0:93", site="default", considerHome=30 ]
+    Thing wirelessClient liwiasPhone "Liwia's phone" [ cid="9a:8a:8b:9a:b1:b6", site="default", considerHome=30 ]
+    Thing wirelessClient weynisPhone "Weyni's phone" [ cid="6c:c7:ec:af:f9:06", site="default", considerHome=30 ]
 }
