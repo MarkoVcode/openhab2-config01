@@ -1,4 +1,3 @@
-/*
 Bridge mqtt:broker:defaultbroker [ host="localhost", secure=false, username="", password=""] {
   Thing topic i_corridor "I-Corridor" @ "Home" {
     Channels:
@@ -75,4 +74,3 @@ Bridge mqtt:broker:defaultbroker [ host="localhost", secure=false, username="", 
       Type string : Version       [ stateTopic="stat/Dual--102/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
    }
 }
-*/

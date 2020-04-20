@@ -1,46 +1,53 @@
 sitemap marek label="Marek's Dash" {
-    Frame label="Tube Status" {
-        Text item=CentralLine label="Central Line [%s]"
-        Text item=NorthernLine label="Northern Line [%s]"
-    }
-    Frame label="1st Floor" icon="firstfloor" {
-        Group item=dummy label="Corridor" icon="corridor" {
-           Text item=TransliteAddams_Temperature label="Temperature [%s °C]" icon="temperature"
-           Text item=TransliteAddams_Humidity label="Humidity [%s]" icon="humidity"
-           Switch item=Lights icon="light" label="Automated Light"
-           Slider item=TransliteLight_Bright icon="slider" label="Back Light"
-           Slider item=TransliteLight_ext1 icon="slider" label="Ext Light"
-	}
-        Group item=dummy2 label="Bathroom" icon="bath" {
-           Switch item=Lightsx icon="light" label="Main Light"
-           Slider item=LR_TV_Volumex icon="slider" label="Night Light"
-        }
-        Group item=dummy10 label="Bedroom" icon="bedroom" {
-           Switch item=T13106_MainLight icon="light" label="Main Light"
-           Switch item=T13106_WallLigths icon="light" label="Wall Lights"
-           Switch item=T13106_NightLight icon="light" label="Night Light"
-        }
-        Group item=dummy11 label="Lab" icon="bedroom" {
-           Switch item=T13107_MainLight icon="light" label="Main Light"
-           Switch item=T13107_MainDeskLight icon="light" label="Desk Ligths"
-           Switch item=T13107_AuxiliaryDeskLight icon="light" label="Aux Lights"
-        }
-        Group item=dummy20 label="Addams Family" icon="energy" {
-           Switch item=TransliteAddamsSwitch_MainSwitch icon="light" label="Translite power"
-        }
-    }
-    Frame label="Ground Floor" icon="groundfloor" {
-        Group item=dummy3 label="Livingroom" icon="groundfloor" {
-           Switch item=GLightMain_MainLight icon="light" label="Main Light"
-           Switch item=GLightMain_NightLight icon="light" label="Night Light"
-           Switch item=GSocketWindow_CH1 icon="light" label="Mains Socket CH1"
-           Switch item=GSocketWindow_CH2 icon="light" label="Mains Socket CH2"
-        }
-        Group item=dummy31 label="Kitchen" icon="kitchen" {
-           Text item=GWallHT16_Temperature label="Temperature [%s °C]" icon="temperature"
-           Text item=GWallHT16_Humidity label="Humidity [%s]" icon="humidity"
-	}
-    }
+   Frame label="Tube Status" {
+      Text item=CentralLine label="Central Line [%s]"
+      Text item=NorthernLine label="Northern Line [%s]"
+   }
+   Frame label="1st Floor" icon="firstfloor" {
+      Group item=dummy label="Corridor" icon="corridor" {
+         Switch item=T1_Switch_A1 label="Automated Light" icon="light"
+         Text item=TH16_Temperature_B label="Temperature: [%s °C]" icon="temperature"
+         Text item=TH16_Humidity_B label="Humidity: [%s]" icon="humidity"
+         Text item=TH16_DewPoint_B label="DewPoint: [%s °C]" icon="temperature"
+         Slider item=TransliteLight_Bright icon="slider" label="Back Light"
+         Slider item=TransliteLight_ext1 icon="slider" label="Ext Light"
+      }
+      Group item=dummy2 label="Bathroom" icon="bath" {
+         Switch item=T1_Switch_A2 label="Main Light" icon="light"
+         Switch item=T1_Switch_A3 label="Sink light" icon="light"
+         Slider item=LR_TV_Volumex icon="slider" label="Night Light"
+      }
+      Group item=dummy10 label="Bedroom" icon="bedroom" {
+         Switch item=T1_Switch_C1 label="Main Light" icon="light"
+         Switch item=T1_Switch_C2 label="Wall Lights" icon="light"
+         Switch item=T1_Switch_C3 label="Night Light" icon="light"
+      }
+      Group item=dummy11 label="Lab" icon="bedroom" {
+         Switch item=T1_Switch_D1 label="Main Light" icon="light"
+         Switch item=T1_Switch_D2 label="Desk Ligths" icon="light"
+         Switch item=T1_Switch_D3 label="Aux Lights" icon="light"
+      }
+      Group item=dummy20 label="Addams Family" icon="energy" {
+         Switch item=TransliteAddamsSwitch_MainSwitch icon="light" label="Translite power"
+      }
+   }
+   Frame label="Ground Floor" icon="groundfloor" {
+      Group item=dummy3 label="Living Room" icon="groundfloor" {
+         Switch item=T1_Switch_B1 label="Main Light" icon="light"
+         Switch item=T1_Switch_B2 label="Night Light" icon="light"
+         Switch item=Dual_Switch_A1 label="Mains Socket CH1" icon="light"
+         Switch item=Dual_Switch_A2 label="Mains Socket CH2" icon="light"
+      }
+      Group item=dummy32 label="Dining Room" icon="kitchen" {
+         Switch item=T1_Switch_E1 label="Main Light" icon="light"
+         Switch item=T1_Switch_E2 label="Mood Light" icon="light"
+      }
+      Group item=dummy31 label="Kitchen" icon="kitchen" {
+         Text item=TH16_Temperature_A label="Temperature: [%s °C]" icon="temperature"
+         Text item=TH16_Humidity_A label="Humidity: [%s]" icon="humidity"
+         Text item=TH16_DewPoint_A label="DewPoint: [%s °C]" icon="temperature"
+      }
+   }
 	Frame {
 		Text item=MareksPhone
 		Text item=MareksPhoneIP
