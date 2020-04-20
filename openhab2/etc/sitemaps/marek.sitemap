@@ -9,8 +9,11 @@ sitemap marek label="Marek's Dash" {
          Text item=TH16_Temperature_B label="Temperature: [%s °C]" icon="temperature"
          Text item=TH16_Humidity_B label="Humidity: [%s]" icon="humidity"
          Text item=TH16_DewPoint_B label="DewPoint: [%s °C]" icon="temperature"
+         Slider item=T_BackLight_A label="Back Light" icon="slider"
+         Slider item=T_ExternalLight_A label="Ext Light" icon="slider"
          Slider item=TransliteLight_Bright icon="slider" label="Back Light"
          Slider item=TransliteLight_ext1 icon="slider" label="Ext Light"
+
       }
       Group item=dummy2 label="Bathroom" icon="bath" {
          Switch item=T1_Switch_A2 label="Main Light" icon="light"
