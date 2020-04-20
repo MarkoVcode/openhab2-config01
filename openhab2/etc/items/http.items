@@ -1,0 +1,3 @@
+String NorthernLine "Northern Line" <NorthernLine> { http="<[tubeStatus:1000:JS(northernLine.js)]" }
+String CentralLine "Central Line" <CentralLine> { http="<[tubeStatus:1000:JS(centralLine.js)]" }
+

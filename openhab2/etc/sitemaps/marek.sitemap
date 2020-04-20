@@ -1,0 +1,71 @@
+sitemap marek label="Marek's Dash" {
+    Frame label="Tube Status" {
+        Text item=CentralLine label="Central Line [%s]"
+        Text item=NorthernLine label="Northern Line [%s]"
+    }
+    Frame label="1st Floor" icon="firstfloor" {
+        Group item=dummy label="Corridor" icon="corridor" {
+           Text item=TransliteAddams_Temperature label="Temperature [%s °C]" icon="temperature"
+           Text item=TransliteAddams_Humidity label="Humidity [%s]" icon="humidity"
+           Switch item=Lights icon="light" label="Automated Light"
+           Slider item=TransliteLight_Bright icon="slider" label="Back Light"
+           Slider item=TransliteLight_ext1 icon="slider" label="Ext Light"
+	}
+        Group item=dummy2 label="Bathroom" icon="bath" {
+           Switch item=Lightsx icon="light" label="Main Light"
+           Slider item=LR_TV_Volumex icon="slider" label="Night Light"
+        }
+        Group item=dummy10 label="Bedroom" icon="bedroom" {
+           Switch item=T13106_MainLight icon="light" label="Main Light"
+           Switch item=T13106_WallLigths icon="light" label="Wall Lights"
+           Switch item=T13106_NightLight icon="light" label="Night Light"
+        }
+        Group item=dummy11 label="Lab" icon="bedroom" {
+           Switch item=T13107_MainLight icon="light" label="Main Light"
+           Switch item=T13107_MainDeskLight icon="light" label="Desk Ligths"
+           Switch item=T13107_AuxiliaryDeskLight icon="light" label="Aux Lights"
+        }
+        Group item=dummy20 label="Addams Family" icon="energy" {
+           Switch item=TransliteAddamsSwitch_MainSwitch icon="light" label="Translite power"
+        }
+    }
+    Frame label="Ground Floor" icon="groundfloor" {
+        Group item=dummy3 label="Livingroom" icon="groundfloor" {
+           Switch item=GLightMain_MainLight icon="light" label="Main Light"
+           Switch item=GLightMain_NightLight icon="light" label="Night Light"
+           Switch item=GSocketWindow_CH1 icon="light" label="Mains Socket CH1"
+           Switch item=GSocketWindow_CH2 icon="light" label="Mains Socket CH2"
+        }
+        Group item=dummy31 label="Kitchen" icon="kitchen" {
+           Text item=GWallHT16_Temperature label="Temperature [%s °C]" icon="temperature"
+           Text item=GWallHT16_Humidity label="Humidity [%s]" icon="humidity"
+	}
+    }
+	Frame {
+		Text item=MareksPhone
+		Text item=MareksPhoneIP
+		Text item=MareksPhoneAP
+		Text item=MareksPhoneESSID
+		Text item=MareksPhoneRSSI
+		Text item=MareksPhoneUptime
+		Text item=MareksPhoneLastSeen
+	}
+        Frame {
+                Text item=LiwiasPhone
+                Text item=LiwiasPhoneIP
+                Text item=LiwiasPhoneAP
+                Text item=LiwiasPhoneESSID
+                Text item=LiwiasPhoneRSSI
+                Text item=LiwiasPhoneUptime
+                Text item=LiwiasPhoneLastSeen
+        }
+        Frame {
+                Text item=WeynisPhone
+                Text item=WeynisPhoneIP
+                Text item=WeynisPhoneAP
+                Text item=WeynisPhoneESSID
+                Text item=WeynisPhoneRSSI
+                Text item=WeynisPhoneUptime
+                Text item=WeynisPhoneLastSeen
+        }
+}

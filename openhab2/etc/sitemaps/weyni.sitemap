@@ -1,0 +1,33 @@
+sitemap weyni label="Weyni's Dash" {
+    Frame label="1st Floor" icon="firstfloor" {
+        Group item=dummy label="Corridor" icon="corridor" {
+           Text item=TransliteAddams_Temperature label="Temperature [%s °C]" icon="temperature"
+           Text item=TransliteAddams_Humidity label="Humidity [%s]" icon="humidity"
+           Switch item=Lights icon="light" label="Automated Light"
+           Slider item=TransliteLight_Bright icon="slider" label="Back Light"
+           Slider item=TransliteLight_ext1 icon="slider" label="Ext Light"
+        }
+        Group item=dummy2 label="Bathroom" icon="bath" {
+           Switch item=Lightsx icon="light" label="Main Light"
+           Slider item=LR_TV_Volumex icon="slider" label="Night Light"
+        }
+        Group item=dummy10 label="Bedroom" icon="bedroom" {
+           Switch item=T13106_MainLight icon="light" label="Main Light"
+           Switch item=T13106_WallLigths icon="light" label="Wall Lights"
+           Switch item=T13106_NightLight icon="light" label="Night Light"
+        }
+    }
+    Frame label="Ground Floor" icon="groundfloor" {
+        Group item=dummy3 label="Livingroom" icon="groundfloor" {
+           Switch item=GLightMain_MainLight icon="light" label="Main Light"
+           Switch item=GLightMain_NightLight icon="light" label="Night Light"
+           Switch item=GSocketWindow_CH1 icon="light" label="Mains Socket CH1"
+           Switch item=GSocketWindow_CH2 icon="light" label="Mains Socket CH2"
+        }
+        Group item=dummy31 label="Kitchen" icon="kitchen" {
+           Text item=GWallHT16_Temperature label="Temperature [%s °C]" icon="temperature"
+           Text item=GWallHT16_Humidity label="Humidity [%s]" icon="humidity"
+        }
+    }
+}
+

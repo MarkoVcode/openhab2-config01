@@ -1,0 +1,76 @@
+Bridge mqtt:broker:defaultbroker [ host="localhost", secure=false, username="", password=""] {
+  Thing topic i_corridor "I-Corridor" @ "Home" {
+    Channels:
+      Type switch : PowerSwitch1  [ stateTopic="stat/T1-3-109/POWER1" , commandTopic="cmnd/T1-3-109/POWER1", on="ON", off="OFF"]
+      Type switch : PowerSwitch2  [ stateTopic="stat/T1-3-109/POWER2" , commandTopic="cmnd/T1-3-109/POWER2", on="ON", off="OFF"]
+      Type switch : PowerSwitch3  [ stateTopic="stat/T1-3-109/POWER3" , commandTopic="cmnd/T1-3-109/POWER3", on="ON", off="OFF"]
+      Type switch : GetStatus     [ commandTopic="cmnd/T1-3-109/Status", on="0", off=""]
+      Type string : Version       [ stateTopic="stat/T1-3-109/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
+   }
+  Thing topic g_living_room "G-Living-Room" @ "Home" {
+    Channels:
+      Type switch : PowerSwitch1  [ stateTopic="stat/T1-3-108/POWER1" , commandTopic="cmnd/T1-3-108/POWER1", on="ON", off="OFF"]
+      Type switch : PowerSwitch2  [ stateTopic="stat/T1-3-108/POWER2" , commandTopic="cmnd/T1-3-108/POWER2", on="ON", off="OFF"]
+      Type switch : PowerSwitch3  [ stateTopic="stat/T1-3-108/POWER3" , commandTopic="cmnd/T1-3-108/POWER3", on="ON", off="OFF"]
+      Type switch : GetStatus     [ commandTopic="cmnd/T1-3-108/Status", on="0", off=""]
+      Type string : Version       [ stateTopic="stat/T1-3-108/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
+   }
+  Thing topic i_master_bedroom "I-Master-Bedroom" @ "Home" {
+    Channels:
+      Type switch : PowerSwitch1  [ stateTopic="stat/T1-3-106/POWER1" , commandTopic="cmnd/T1-3-106/POWER1", on="ON", off="OFF"]
+      Type switch : PowerSwitch2  [ stateTopic="stat/T1-3-106/POWER2" , commandTopic="cmnd/T1-3-106/POWER2", on="ON", off="OFF"]
+      Type switch : PowerSwitch3  [ stateTopic="stat/T1-3-106/POWER3" , commandTopic="cmnd/T1-3-106/POWER3", on="ON", off="OFF"]
+      Type switch : GetStatus     [ commandTopic="cmnd/T1-3-106/Status", on="0", off=""]
+      Type string : Version       [ stateTopic="stat/T1-3-106/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
+   }
+  Thing topic i_lab "I-Lab" @ "Home" {
+    Channels:
+      Type switch : PowerSwitch1  [ stateTopic="stat/T1-3-107/POWER1" , commandTopic="cmnd/T1-3-107/POWER1", on="ON", off="OFF"]
+      Type switch : PowerSwitch2  [ stateTopic="stat/T1-3-107/POWER2" , commandTopic="cmnd/T1-3-107/POWER2", on="ON", off="OFF"]
+      Type switch : PowerSwitch3  [ stateTopic="stat/T1-3-107/POWER3" , commandTopic="cmnd/T1-3-107/POWER3", on="ON", off="OFF"]
+      Type switch : GetStatus     [ commandTopic="cmnd/T1-3-107/Status", on="0", off=""]
+      Type string : Version       [ stateTopic="stat/T1-3-107/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
+   }
+  Thing topic g_dining_room "G-Dining-Room" @ "Home" {
+    Channels:
+      Type switch : PowerSwitch1  [ stateTopic="stat/T1-2-105/POWER1" , commandTopic="cmnd/T1-2-105/POWER1", on="ON", off="OFF"]
+      Type switch : PowerSwitch2  [ stateTopic="stat/T1-2-105/POWER2" , commandTopic="cmnd/T1-2-105/POWER2", on="ON", off="OFF"]
+      Type switch : GetStatus     [ commandTopic="cmnd/T1-2-105/Status", on="0", off=""]
+      Type string : Version       [ stateTopic="stat/T1-2-105/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
+   }
+  Thing topic g_bathroom "G-Bathroom" @ "Home" {
+    Channels:
+      Type switch : PowerSwitch1  [ stateTopic="stat/T1-1-104/POWER1" , commandTopic="cmnd/T1-1-104/POWER1", on="ON", off="OFF"]
+      Type switch : GetStatus     [ commandTopic="cmnd/T1-1-104/Status", on="0", off=""]
+      Type string : Version       [ stateTopic="stat/T1-1-104/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
+   }
+
+
+  Thing topic th16_01 "Kitchen" @ "Home" {
+    Channels:
+      Type switch : PowerSwitch1  [ stateTopic="stat/TH-16-101/POWER", commandTopic="cmnd/TH-16-101/POWER", on="ON", off="OFF" ]
+      Type string : Temperature   [ stateTopic="tele/TH-16-101/SENSOR", transformationPattern="JSONPATH:$.SI7021.Temperature"]
+      Type string : Humidity      [ stateTopic="tele/TH-16-101/SENSOR", transformationPattern="JSONPATH:$.SI7021.Humidity"]
+      Type string : DewPoint      [ stateTopic="tele/TH-16-101/SENSOR", transformationPattern="JSONPATH:$.SI7021.DewPoint"]
+      Type switch : GetStatus     [ commandTopic="cmnd/TH-16-101/Status", on="0", off=""]
+      Type string : Version       [ stateTopic="stat/TH-16-101/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
+   }
+  Thing topic th16_02 "Translite-1-Power" @ "Home" {
+    Channels:
+      Type switch : PowerSwitch1  [ stateTopic="stat/TH-16-113/POWER", commandTopic="cmnd/TH-16-113/POWER", on="ON", off="OFF" ]
+      Type string : Temperature   [ stateTopic="tele/TH-16-113/SENSOR", transformationPattern="JSONPATH:$.SI7021.Temperature"]
+      Type string : Humidity      [ stateTopic="tele/TH-16-113/SENSOR", transformationPattern="JSONPATH:$.SI7021.Humidity"]
+      Type string : DewPoint      [ stateTopic="tele/TH-16-113/SENSOR", transformationPattern="JSONPATH:$.SI7021.DewPoint"]
+      Type switch : GetStatus     [ commandTopic="cmnd/TH-16-113/Status", on="0", off=""]
+      Type string : Version       [ stateTopic="stat/TH-16-113/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
+   }
+
+
+  Thing topic dual_01 "G-Sockets-Window" @ "Home" {
+    Channels:
+      Type switch : PowerSwitch1  [ stateTopic="stat/Dual--102/POWER1" , commandTopic="cmnd/Dual--102/POWER1", on="ON", off="OFF"]
+      Type switch : PowerSwitch2  [ stateTopic="stat/Dual--102/POWER2" , commandTopic="cmnd/Dual--102/POWER2", on="ON", off="OFF"]
+      Type switch : GetStatus     [ commandTopic="cmnd/Dual--102/Status", on="0", off=""]
+      Type string : Version       [ stateTopic="stat/Dual--102/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
+   }
+}

@@ -1,0 +1,53 @@
+Switch   T1_Switch_A1           "Switch-1 [MAP(unifi.map):%s]"             { channel="mqtt:topic:defaultbroker:i_corridor:PowerSwitch1" }
+Switch   T1_Switch_A2           "Switch-2 [MAP(unifi.map):%s]"             { channel="mqtt:topic:defaultbroker:i_corridor:PowerSwitch2" }
+Switch   T1_Switch_A3           "Switch-3 [MAP(unifi.map):%s]"             { channel="mqtt:topic:defaultbroker:i_corridor:PowerSwitch3" }
+Switch   T1_GetStatus_A         "Status [MAP(unifi.map):%s]"               { channel="mqtt:topic:defaultbroker:i_corridor:GetStatus" }
+String   T1_Version_A           "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:i_corridor:Version" }
+
+Switch   T1_Switch_B1           "Switch-1 [MAP(unifi.map):%s]"             { channel="mqtt:topic:defaultbroker:g_living_room:PowerSwitch1" }
+Switch   T1_Switch_B2           "Switch-2 [MAP(unifi.map):%s]"             { channel="mqtt:topic:defaultbroker:g_living_room:PowerSwitch2" }
+Switch   T1_Switch_B3           "Switch-3 [MAP(unifi.map):%s]"             { channel="mqtt:topic:defaultbroker:g_living_room:PowerSwitch3" }
+Switch   T1_GetStatus_B         "Status [MAP(unifi.map):%s]"               { channel="mqtt:topic:defaultbroker:g_living_room:GetStatus" }
+String   T1_Version_B           "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:g_living_room:Version" }
+
+Switch   T1_Switch_C1           "Switch-1 [MAP(unifi.map):%s]"             { channel="mqtt:topic:defaultbroker:i_master_bedroom:PowerSwitch1" }
+Switch   T1_Switch_C2           "Switch-2 [MAP(unifi.map):%s]"             { channel="mqtt:topic:defaultbroker:i_master_bedroom:PowerSwitch2" }
+Switch   T1_Switch_C3           "Switch-3 [MAP(unifi.map):%s]"             { channel="mqtt:topic:defaultbroker:i_master_bedroom:PowerSwitch3" }
+Switch   T1_GetStatus_C         "Status [MAP(unifi.map):%s]"               { channel="mqtt:topic:defaultbroker:i_master_bedroom:GetStatus" }
+String   T1_Version_C           "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:i_master_bedroom:Version" }
+
+Switch   T1_Switch_D1           "Switch-1 [MAP(unifi.map):%s]"             { channel="mqtt:topic:defaultbroker:i_lab:PowerSwitch1" }
+Switch   T1_Switch_D2           "Switch-2 [MAP(unifi.map):%s]"             { channel="mqtt:topic:defaultbroker:i_lab:PowerSwitch2" }
+Switch   T1_Switch_D3           "Switch-3 [MAP(unifi.map):%s]"             { channel="mqtt:topic:defaultbroker:i_lab:PowerSwitch3" }
+Switch   T1_GetStatus_D         "Status [MAP(unifi.map):%s]"               { channel="mqtt:topic:defaultbroker:i_lab:GetStatus" }
+String   T1_Version_D           "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:i_lab:Version" }
+
+Switch   T1_Switch_E1           "Switch-1 [MAP(unifi.map):%s]"             { channel="mqtt:topic:defaultbroker:g_dining_room:PowerSwitch1" }
+Switch   T1_Switch_E2           "Switch-2 [MAP(unifi.map):%s]"             { channel="mqtt:topic:defaultbroker:g_dining_room:PowerSwitch2" }
+Switch   T1_GetStatus_E         "Status [MAP(unifi.map):%s]"               { channel="mqtt:topic:defaultbroker:g_dining_room:GetStatus" }
+String   T1_Version_E           "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:g_dining_room:Version" }
+
+Switch   T1_Switch_F1           "Switch [MAP(unifi.map):%s]"               { channel="mqtt:topic:defaultbroker:g_bathroom:PowerSwitch1" }
+Switch   T1_GetStatus_F         "Status [MAP(unifi.map):%s]"               { channel="mqtt:topic:defaultbroker:g_bathroom:GetStatus" }
+String   T1_Version_F           "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:g_bathroom:Version" }
+
+Switch   TH16_Switch_A          "Switch [MAP(unifi.map):%s]"               { channel="mqtt:topic:defaultbroker:th16_01:PowerSwitch1" }
+String   TH16_Temperature_A     "Temperature: [%s]"                        { channel="mqtt:topic:defaultbroker:th16_01:Temperature" }
+String   TH16_Humidity_A        "Humidity: [%s]"                           { channel="mqtt:topic:defaultbroker:th16_01:Humidity" }
+String   TH16_DewPoint_A        "DewPoint: [%s]"                           { channel="mqtt:topic:defaultbroker:th16_01:DewPoint" }
+Switch   TH16_GetStatus_A       "Status [MAP(unifi.map):%s]"               { channel="mqtt:topic:defaultbroker:th16_01:GetStatus" }
+String   TH16_Version_A         "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:th16_01:Version" }
+
+Switch   TH16_Switch_B          "Switch [MAP(unifi.map):%s]"               { channel="mqtt:topic:defaultbroker:th16_02:PowerSwitch1" }
+String   TH16_Temperature_B     "Temperature: [%s]"                        { channel="mqtt:topic:defaultbroker:th16_02:Temperature" }
+String   TH16_Humidity_B        "Humidity: [%s]"                           { channel="mqtt:topic:defaultbroker:th16_02:Humidity" }
+String   TH16_DewPoint_B        "DewPoint: [%s]"                           { channel="mqtt:topic:defaultbroker:th16_02:DewPoint" }
+Switch   TH16_GetStatus_B       "Status [MAP(unifi.map):%s]"               { channel="mqtt:topic:defaultbroker:th16_02:GetStatus" }
+String   TH16_Version_B         "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:th16_02:Version" }
+
+Switch   Dual_Switch_A1         "Switch-1 [MAP(unifi.map):%s]"             { channel="mqtt:topic:defaultbroker:dual_01:PowerSwitch1" }
+Switch   Dual_Switch_A2         "Switch-2 [MAP(unifi.map):%s]"             { channel="mqtt:topic:defaultbroker:dual_01:PowerSwitch2" }
+Switch   Dual_GetStatus_A       "Status [MAP(unifi.map):%s]"               { channel="mqtt:topic:defaultbroker:dual_01:GetStatus" }
+String   Dual_Version_A         "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:dual_01:Version" }
+
+

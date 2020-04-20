@@ -1,0 +1,35 @@
+Switch   MareksPhone           "Marek's phone [MAP(unifi.map):%s]"             { channel="unifi:wirelessClient:home:mareksPhone:online" }
+String   MareksPhoneSite       "Marek's phone: Site [%s]"                      { channel="unifi:wirelessClient:home:mareksPhone:site" }
+String   MareksPhoneMAC        "Marek's phone: MAC [%s]"                       { channel="unifi:wirelessClient:home:mareksPhone:macAddress" }
+String   MareksPhoneIP         "Marek's phone: IP [%s]"                        { channel="unifi:wirelessClient:home:mareksPhone:ipAddress" }
+String   MareksPhoneAP         "Marek's phone: AP [%s]"                        { channel="unifi:wirelessClient:home:mareksPhone:ap" }
+String   MareksPhoneESSID      "Marek's phone: ESSID [%s]"                     { channel="unifi:wirelessClient:home:mareksPhone:essid" }
+Number   MareksPhoneRSSI       "Marek's phone: RSSI [%d]"                      { channel="unifi:wirelessClient:home:mareksPhone:rssi" }
+Number   MareksPhoneUptime     "Marek's phone: Uptime [%d]"                    { channel="unifi:wirelessClient:home:mareksPhone:uptime" }
+DateTime MareksPhoneLastSeen   "Marek's phone: Last Seen [%1$tH:%1$tM:%1$tS]"  { channel="unifi:wirelessClient:home:mareksPhone:lastSeen" } 
+Switch   MareksPhoneBlocked    "Marek's phone: Blocked"                        { channel="unifi:wirelessClient:home:mareksPhone:blocked" }
+Switch   MareksPhoneReconnect  "Marek's phone: Reconnect"                      { channel="unifi:wirelessClient:home:mareksPhone:reconnect" }
+
+Switch   LiwiasPhone           "Liwia's phone [MAP(unifi.map):%s]"             { channel="unifi:wirelessClient:home:liwiasPhone:online" }
+String   LiwiasPhoneSite       "Liwia's phone: Site [%s]"                      { channel="unifi:wirelessClient:home:liwiasPhone:site" }
+String   LiwiasPhoneMAC        "Liwia's phone: MAC [%s]"                       { channel="unifi:wirelessClient:home:liwiasPhone:macAddress" }
+String   LiwiasPhoneIP         "Liwia's phone: IP [%s]"                        { channel="unifi:wirelessClient:home:liwiasPhone:ipAddress" }
+String   LiwiasPhoneAP         "Liwia's phone: AP [%s]"                        { channel="unifi:wirelessClient:home:liwiasPhone:ap" }
+String   LiwiasPhoneESSID      "Liwia's phone: ESSID [%s]"                     { channel="unifi:wirelessClient:home:liwiasPhone:essid" }
+Number   LiwiasPhoneRSSI       "Liwia's phone: RSSI [%d]"                      { channel="unifi:wirelessClient:home:liwiasPhone:rssi" }
+Number   LiwiasPhoneUptime     "Liwia's phone: Uptime [%d]"                    { channel="unifi:wirelessClient:home:liwiasPhone:uptime" }
+DateTime LiwiasPhoneLastSeen   "Liwia's phone: Last Seen [%1$tH:%1$tM:%1$tS]"  { channel="unifi:wirelessClient:home:liwiasPhone:lastSeen" } 
+Switch   LiwiasPhoneBlocked    "Liwia's phone: Blocked"                        { channel="unifi:wirelessClient:home:liwiasPhone:blocked" }
+Switch   LiwiasPhoneReconnect  "Liwia's phone: Reconnect"                      { channel="unifi:wirelessClient:home:liwiasPhone:reconnect" }
+
+Switch   WeynisPhone           "Weyni's phone [MAP(unifi.map):%s]"             { channel="unifi:wirelessClient:home:weynisPhone:online" }
+String   WeynisPhoneSite       "Weyni's phone: Site [%s]"                      { channel="unifi:wirelessClient:home:weynisPhone:site" }
+String   WeynisPhoneMAC        "Weyni's phone: MAC [%s]"                       { channel="unifi:wirelessClient:home:weynisPhone:macAddress" }
+String   WeynisPhoneIP         "Weyni's phone: IP [%s]"                        { channel="unifi:wirelessClient:home:weynisPhone:ipAddress" }
+String   WeynisPhoneAP         "Weyni's phone: AP [%s]"                        { channel="unifi:wirelessClient:home:weynisPhone:ap" }
+String   WeynisPhoneESSID      "Weyni's phone: ESSID [%s]"                     { channel="unifi:wirelessClient:home:weynisPhone:essid" }
+Number   WeynisPhoneRSSI       "Weyni's phone: RSSI [%d]"                      { channel="unifi:wirelessClient:home:weynisPhone:rssi" }
+Number   WeynisPhoneUptime     "Weyni's phone: Uptime [%d]"                    { channel="unifi:wirelessClient:home:weynisPhone:uptime" }
+DateTime WeynisPhoneLastSeen   "Weyni's phone: Last Seen [%1$tH:%1$tM:%1$tS]"  { channel="unifi:wirelessClient:home:weynisPhone:lastSeen" } 
+Switch   WeynisPhoneBlocked    "Weyni's phone: Blocked"                        { channel="unifi:wirelessClient:home:weynisPhone:blocked" }
+Switch   WeynisPhoneReconnect  "Weyni's phone: Reconnect"                      { channel="unifi:wirelessClient:home:weynisPhone:reconnect" }
