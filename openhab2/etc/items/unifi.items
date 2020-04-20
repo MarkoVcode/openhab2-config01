@@ -1,3 +1,4 @@
+/*
 Switch   MareksPhone           "Marek's phone [MAP(unifi.map):%s]"             { channel="unifi:wirelessClient:home:mareksPhone:online" }
 String   MareksPhoneSite       "Marek's phone: Site [%s]"                      { channel="unifi:wirelessClient:home:mareksPhone:site" }
 String   MareksPhoneMAC        "Marek's phone: MAC [%s]"                       { channel="unifi:wirelessClient:home:mareksPhone:macAddress" }
@@ -33,3 +34,4 @@ Number   WeynisPhoneUptime     "Weyni's phone: Uptime [%d]"                    {
 DateTime WeynisPhoneLastSeen   "Weyni's phone: Last Seen [%1$tH:%1$tM:%1$tS]"  { channel="unifi:wirelessClient:home:weynisPhone:lastSeen" } 
 Switch   WeynisPhoneBlocked    "Weyni's phone: Blocked"                        { channel="unifi:wirelessClient:home:weynisPhone:blocked" }
 Switch   WeynisPhoneReconnect  "Weyni's phone: Reconnect"                      { channel="unifi:wirelessClient:home:weynisPhone:reconnect" }
+*/

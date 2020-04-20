@@ -1,3 +1,4 @@
+/*
 DateTime           SunRiseStart              "Start time"           {channel="astro:sun:local:rise#start"}
 DateTime           SunRiseEnd                "End time"             {channel="astro:sun:local:rise#end"}
 Number:Time        SunRiseDuration           "Duration"             {channel="astro:sun:local:rise#duration"}
@@ -57,4 +58,4 @@ DateTime           SunEclipseRing            "Ring eclipse"         {channel="as
 String             SunPhaseName              "Sun phase name"       {channel="astro:sun:local:phase#name"}
 
 
-
+*/
