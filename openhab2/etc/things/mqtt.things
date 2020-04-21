@@ -1,8 +1,8 @@
 Bridge mqtt:broker:defaultbroker [ host="localhost", secure=false, username="", password=""] {
     Thing topic i_translite_control "I-TransliteCtrl" @ "Home" {
         Channels:
-            Type dimmer : BackLight       [ stateTopic="stat/TRANSLITE-1/POWER1" , commandTopic="cmnd/TRANSLITE-1/POWER1"]
-            Type dimmer : ExternalLight1  [ stateTopic="stat/TRANSLITE-1/POWER2" , commandTopic="cmnd/TRANSLITE-1/POWER2"]
+            Type dimmer : BackLight       [ stateTopic="stat/TRANSLITE-1/BCKL-BRIGHT" , commandTopic="cmnd/TRANSLITE-1/BCKL-BRIGHT"]
+            Type dimmer : ExternalLight1  [ stateTopic="stat/TRANSLITE-1/EXT-BRIGHT-CH1" , commandTopic="cmnd/TRANSLITE-1/EXT-BRIGHT-CH1"]
             Type switch : GetStatus       [ commandTopic="cmnd/TRANSLITE-1/Status", on="0", off=""]
             Type string : Version         [ stateTopic="stat/TRANSLITE-1/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
     }
