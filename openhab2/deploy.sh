@@ -22,5 +22,7 @@ cp etc/transform/northernLine.js /etc/openhab2/transform
 cp etc/transform/temperature.js /etc/openhab2/transform
 cp etc/transform/unifi.map /etc/openhab2/transform
 
+cp etc/rules/switches.rules /etc/openhab2/rules
+
 sudo chown -R openhab:openhab /etc/openhab2
 

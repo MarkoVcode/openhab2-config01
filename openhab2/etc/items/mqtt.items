@@ -1,4 +1,4 @@
-Dimmer   T_BackLight_A         "BackLight [MAP(unifi.map):%s]"            { channel="mqtt:topic:defaultbroker:i_translite_control:BackLight" }
-Dimmer   T_ExternalLight_A     "ExternalLight1 [MAP(unifi.map):%s]"       { channel="mqtt:topic:defaultbroker:i_translite_control:ExternalLight1" }
+Dimmer   T_BackLight_A         "BackLight [%s]"                           { channel="mqtt:topic:defaultbroker:i_translite_control:BackLight" }
+Dimmer   T_ExternalLight_A     "ExternalLight1 [%s]"                      { channel="mqtt:topic:defaultbroker:i_translite_control:ExternalLight1" }
 Switch   T_GetStatus_A         "Status [MAP(unifi.map):%s]"               { channel="mqtt:topic:defaultbroker:i_translite_control:GetStatus" }
 String   T_Version_A           "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:i_translite_control:Version" }

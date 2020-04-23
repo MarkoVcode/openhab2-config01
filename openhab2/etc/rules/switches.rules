@@ -1,0 +1,7 @@
+
+rule "React on Switch-1 (T1_Switch_B1) change/update"
+when
+    Item T1_Switch_B1 changed from OFF
+then
+    T1_Switch_B3.sendCommand(ON)
+end
