@@ -17,14 +17,14 @@ end
 
 rule "Disable stairs light for night time"
 when
-    Time cron "22 00 * * *"
+    Time cron "0 15 22 1/1 * ? *"
 then
     T1_3_109_Switch_1.sendCommand(OFF)
 end
 
 rule "Enable stairs light for day time"
 when
-    Time cron "6 00 * * *"
+    Time cron "0 0 6 1/1 * ? *"
 then
     T1_3_109_Switch_1.sendCommand(ON)
 end
