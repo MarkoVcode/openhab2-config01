@@ -5,30 +5,27 @@ sitemap marek label="Marek's Dash" {
    }
    Frame label="1st Floor" icon="firstfloor" {
       Group item=dummy label="Corridor" icon="corridor" {
-         Switch item=T1_Switch_A1 label="Automated Light" icon="light"
-         Text item=TH16_Temperature_B label="Temperature: [%s °C]" icon="temperature"
-         Text item=TH16_Humidity_B label="Humidity: [%s]" icon="humidity"
-         Text item=TH16_DewPoint_B label="DewPoint: [%s °C]" icon="temperature"
-         Slider item=T_BackLight_A label="Back Light" icon="slider"
-         Slider item=T_ExternalLight_A label="Ext Light" icon="slider"
-         Slider item=TransliteLight_Bright icon="slider" label="Back Light"
-         Slider item=TransliteLight_ext1 icon="slider" label="Ext Light"
-
+         Switch item=T1_3_109_Switch_1 label="Automated Light" icon="light"
+         Text item=TH_16_113_Temperature label="Temperature: [%s °C]" icon="temperature"
+         Text item=TH_16_113_Humidity label="Humidity: [%s]" icon="humidity"
+         Text item=TH_16_113_DewPoint label="DewPoint: [%s °C]" icon="temperature"
+         Slider item=TR_1_BackLight label="Back Light" icon="slider"
+         Slider item=TR_1_ExternalLight label="Ext Light" icon="slider"
       }
       Group item=dummy2 label="Bathroom" icon="bath" {
-         Switch item=T1_Switch_A2 label="Main Light" icon="light"
-         Switch item=T1_Switch_A3 label="Sink light" icon="light"
+         Switch item=T1_3_109_Switch_2 label="Main Light" icon="light"
+         Switch item=T1_3_109_Switch_3 label="Sink light" icon="light"
          Slider item=LR_TV_Volumex icon="slider" label="Night Light"
       }
       Group item=dummy10 label="Bedroom" icon="bedroom" {
-         Switch item=T1_Switch_C1 label="Main Light" icon="light"
-         Switch item=T1_Switch_C2 label="Wall Lights" icon="light"
-         Switch item=T1_Switch_C3 label="Night Light" icon="light"
+         Switch item=T1_3_106_Switch_1 label="Main Light" icon="light"
+         Switch item=T1_3_106_Switch_2 label="Wall Lights" icon="light"
+         Switch item=T1_3_106_Switch_3 label="Night Light" icon="light"
       }
       Group item=dummy11 label="Lab" icon="bedroom" {
-         Switch item=T1_Switch_D1 label="Main Light" icon="light"
-         Switch item=T1_Switch_D2 label="Desk Ligths" icon="light"
-         Switch item=T1_Switch_D3 label="Aux Lights" icon="light"
+         Switch item=T1_3_107_Switch_1 label="Main Light" icon="light"
+         Switch item=T1_3_107_Switch_2 label="Desk Ligths" icon="light"
+         Switch item=T1_3_107_Switch_3 label="Aux Lights" icon="light"
       }
       Group item=dummy20 label="Addams Family" icon="energy" {
          Switch item=TransliteAddamsSwitch_MainSwitch icon="light" label="Translite power"
@@ -36,19 +33,19 @@ sitemap marek label="Marek's Dash" {
    }
    Frame label="Ground Floor" icon="groundfloor" {
       Group item=dummy3 label="Living Room" icon="groundfloor" {
-         Switch item=T1_Switch_B1 label="Main Light" icon="light"
-         Switch item=T1_Switch_B2 label="Night Light" icon="light"
-         Switch item=Dual_Switch_A1 label="Mains Socket CH1" icon="light"
-         Switch item=Dual_Switch_A2 label="Mains Socket CH2" icon="light"
+         Switch item=T1_3_108_Switch_1 label="Main Light" icon="light"
+         Switch item=T1_3_108_Switch_2 label="Night Light" icon="light"
+         Switch item=Dual__102_Switch_1 label="Mains Socket CH1" icon="light"
+         Switch item=Dual__102_Switch_2 label="Mains Socket CH2" icon="light"
       }
       Group item=dummy32 label="Dining Room" icon="kitchen" {
-         Switch item=T1_Switch_E1 label="Main Light" icon="light"
-         Switch item=T1_Switch_E2 label="Mood Light" icon="light"
+         Switch item=T1_2_105_Switch_1 label="Main Light" icon="light"
+         Switch item=T1_2_105_Switch_2 label="Mood Light" icon="light"
       }
       Group item=dummy31 label="Kitchen" icon="kitchen" {
-         Text item=TH16_Temperature_A label="Temperature: [%s °C]" icon="temperature"
-         Text item=TH16_Humidity_A label="Humidity: [%s]" icon="humidity"
-         Text item=TH16_DewPoint_A label="DewPoint: [%s °C]" icon="temperature"
+         Text item=TH_16_101_Temperature label="Temperature: [%s °C]" icon="temperature"
+         Text item=TH_16_101_Humidity label="Humidity: [%s]" icon="humidity"
+         Text item=TH_16_101_DewPoint label="DewPoint: [%s °C]" icon="temperature"
       }
    }
 	Frame {

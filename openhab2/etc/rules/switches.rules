@@ -7,7 +7,6 @@ then
     T_ExternalLight_A.sendCommand(100)
 end
 
-
 rule "React on Switch-1 (T1_Switch_B1) change/update"
 when
     Item T1_Switch_B1 changed from ON
