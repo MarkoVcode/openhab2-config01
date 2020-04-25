@@ -1,5 +1,5 @@
 
-rule "React on Switch-1 (T1_3_109_Switch_1) change/update"
+rule "React on staris light switch (T1_3_109_Switch_1) change/update off"
 when
     Item T1_3_109_Switch_1 changed from OFF
 then
@@ -7,7 +7,7 @@ then
     TR_1_ExternalLight.sendCommand(0)
 end
 
-rule "React on Switch-1 (T1_3_109_Switch_1) change/update"
+rule "React on staris light switch (T1_3_109_Switch_1) change/update on"
 when
     Item T1_3_109_Switch_1 changed from ON
 then
@@ -15,3 +15,16 @@ then
     TR_1_ExternalLight.sendCommand(100)
 end
 
+rule "Disable stairs light for night time"
+when
+    Time cron "22 00 * * *"
+then
+    T1_3_109_Switch_1.sendCommand(OFF)
+end
+
+rule "Enable stairs light for day time"
+when
+    Time cron "6 00 * * *"
+then
+    T1_3_109_Switch_1.sendCommand(ON)
+end
