@@ -17,7 +17,7 @@ end
 
 rule "Disable stairs light for night time"
 when
-    Time cron "0 15 22 1/1 * ? *"
+    Time cron "0 0 22 1/1 * ? *"
 then
     T1_3_109_Switch_1.sendCommand(OFF)
 end
@@ -27,4 +27,15 @@ when
     Time cron "0 0 6 1/1 * ? *"
 then
     T1_3_109_Switch_1.sendCommand(ON)
+end
+
+rule "Start wake up light on sunrise"
+when
+    Channel "astro:sun:local:rise#event" triggered
+then
+    switch(receivedEvent.getEvent()) {
+        case "START": {
+            T1_3_106_Switch_3.sendCommand(ON)
+        }
+    }
 end
