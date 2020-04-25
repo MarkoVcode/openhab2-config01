@@ -42,12 +42,12 @@ then
     }
 end
 
-rule "React on Switch-3 (T1_3_106_Switch_3) change/update timer test"
-when
-    Item T1_3_106_Switch_3 changed from OFF
-then
-    createTimer(now.plusSeconds(30), [|
-        T1_3_106_Switch_3.sendCommand(OFF)
-    ])
-end
+//rule "React on Switch-3 (T1_3_106_Switch_3) change/update timer test"
+//when
+//    Item T1_3_106_Switch_3 changed from OFF
+//then
+//    createTimer(now.plusSeconds(30), [|
+//        T1_3_106_Switch_3.sendCommand(OFF)
+//    ])
+//end
 
