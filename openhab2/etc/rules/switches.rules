@@ -1,0 +1,17 @@
+
+rule "React on Switch-1 (T1_3_109_Switch_1) change/update"
+when
+    Item T1_3_109_Switch_1 changed from OFF
+then
+    TR_1_BackLight.sendCommand(100)
+    TR_1_ExternalLight.sendCommand(0)
+end
+
+rule "React on Switch-1 (T1_3_109_Switch_1) change/update"
+when
+    Item T1_3_109_Switch_1 changed from ON
+then
+    TR_1_BackLight.sendCommand(50)
+    TR_1_ExternalLight.sendCommand(100)
+end
+
