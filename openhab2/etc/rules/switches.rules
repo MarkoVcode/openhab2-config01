@@ -5,6 +5,7 @@ when
 then
     TR_1_BackLight.sendCommand(100)
     TR_1_ExternalLight.sendCommand(0)
+    //if between 22 and 6 set timer to switch off within 30 mins
 end
 
 rule "React on staris light switch (T1_3_109_Switch_1) change/update on"
@@ -13,6 +14,7 @@ when
 then
     TR_1_BackLight.sendCommand(50)
     TR_1_ExternalLight.sendCommand(100)
+    //if between 6 and 22 set timer to switch on within 10 mins
 end
 
 rule "Disable stairs light for night time"
@@ -39,3 +41,13 @@ then
         }
     }
 end
+
+rule "React on Switch-3 (T1_3_106_Switch_3) change/update timer test"
+when
+    Item T1_3_106_Switch_3 changed from OFF
+then
+    createTimer(now.plusSeconds(30), [|
+        T1_3_106_Switch_3.sendCommand(OFF)
+    ])
+end
+
