@@ -1,0 +1,33 @@
+var Timer timerAlarmMarek = null
+var Timer timerAlarmLiwia = null
+var Timer timerAlarmWeyni = null
+
+rule "Alarm Clock Marek"
+when
+    Item AlarmClockMarek changed
+then
+    if (AlarmClockMarek.state as Number == 0) {
+        if (timerAlarmMarek !== null) {
+            timerAlarmMarek.cancel
+            timerAlarmMarek = null
+        }
+        logInfo("alarm", "(Marek) All alarms are cancelled")
+    } else {
+        var epoch = new DateTime((AlarmClockMarek.state as Number).longValue)
+        logInfo("alarm", "(Marek) Scheduling alarm for " +  epoch.toString)
+
+        if (timerAlarmMarek !== null) {
+            logInfo("alarm", "(Marek) Reschedule alarm")
+            timerAlarmMarek.reschedule(epoch)
+        } else {
+            logInfo("alarm", "(Marek) New Alarm")
+            timerAlarmMarek = createTimer(epoch,
+                [ |
+                    // Turn on stuff, e.g. radio or light
+                    // Light.sendCommand(ON)
+                    logInfo("alarm", "(Marek) alarm is expired")
+                ]
+            )
+        }
+    }
+end

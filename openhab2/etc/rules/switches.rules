@@ -31,16 +31,16 @@ then
     T1_3_109_Switch_1.sendCommand(ON)
 end
 
-rule "Start wake up light on sunrise"
-when
-    Channel "astro:sun:local:rise#event" triggered
-then
-    switch(receivedEvent.getEvent()) {
-        case "START": {
-            T1_3_106_Switch_3.sendCommand(ON)
-        }
-    }
-end
+//rule "Start wake up light on sunrise"
+//when
+//    Channel "astro:sun:local:rise#event" triggered
+//then
+//    switch(receivedEvent.getEvent()) {
+//        case "START": {
+//            T1_3_106_Switch_3.sendCommand(ON)
+//        }
+//    }
+//end
 
 //rule "React on Switch-3 (T1_3_106_Switch_3) change/update timer test"
 //when
