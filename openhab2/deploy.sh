@@ -9,6 +9,7 @@ cp etc/items/unifi.items /etc/openhab2/items
 cp etc/items/sonoff.items /etc/openhab2/items
 cp etc/items/mqtt.items /etc/openhab2/items
 cp etc/items/astro.items /etc/openhab2/items
+cp etc/items/mobileapp.items /etc/openhab2/items
 
 cp etc/services/http.cfg /etc/openhab2/services
 cp etc/services/addons.cfg /etc/openhab2/services
@@ -25,6 +26,7 @@ cp etc/transform/temperature.js /etc/openhab2/transform
 cp etc/transform/unifi.map /etc/openhab2/transform
 
 cp etc/rules/switches.rules /etc/openhab2/rules
+cp etc/rules/mobileapp.rules /etc/openhab2/rules
 
 sudo chown -R openhab:openhab /etc/openhab2
 
