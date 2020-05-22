@@ -1,4 +1,4 @@
 Dimmer   TR_1_BackLight         "BackLight [%s]"                           { channel="mqtt:topic:defaultbroker:i_translite_control:BackLight" }
 Dimmer   TR_1_ExternalLight     "ExternalLight1 [%s]"                      { channel="mqtt:topic:defaultbroker:i_translite_control:ExternalLight1" }
-Switch   TR_1_GetStatus         "Status [MAP(unifi.map):%s]"               { channel="mqtt:topic:defaultbroker:i_translite_control:GetStatus" }
+Switch   TR_1_GetStatus         "Status [%s]"                              { channel="mqtt:topic:defaultbroker:i_translite_control:GetStatus" }
 String   TR_1_Version           "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:i_translite_control:Version" }

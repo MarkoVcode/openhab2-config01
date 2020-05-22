@@ -14,8 +14,8 @@ sitemap marek label="Marek's Dash" {
       }
       Group item=dummy2 label="Bathroom" icon="bath" {
          Switch item=T1_3_109_Switch_2 label="Main Light" icon="light"
-         Switch item=T1_3_109_Switch_3 label="Sink light" icon="light"
-         Slider item=SV__119_Dimmer icon="slider" label="Night Light"
+         Switch item=T1_3_109_Switch_3 label="Sink Light" icon="light"
+         Slider item=SV__119_Dimmer icon="slider" label="Sink brightness"
       }
       Group item=dummy10 label="Bedroom" icon="bedroom" {
          Switch item=T1_3_106_Switch_1 label="Main Light" icon="light"
