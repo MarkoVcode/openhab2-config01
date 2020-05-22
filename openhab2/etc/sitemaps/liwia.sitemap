@@ -11,7 +11,7 @@ sitemap liwia label="Liwia's Dash" {
       Group item=dummy2 label="Bathroom" icon="bath" {
          Switch item=T1_3_109_Switch_2 label="Main Light" icon="light"
          Switch item=T1_3_109_Switch_3 label="Sink light" icon="light"
-         Slider item=LR_TV_Volumex icon="slider" label="Night Light"
+         Slider item=SV__119_Dimmer icon="slider" label="Night Light"
       }
    }
    Frame label="Ground Floor" icon="groundfloor" {
