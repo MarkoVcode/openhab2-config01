@@ -31,6 +31,17 @@ Bridge mqtt:broker:defaultbroker [ host="localhost", secure=false, username="", 
       Type switch : GetStatus     [ commandTopic="cmnd/T1-3-107/Status", on="0", off=""]
       Type string : Version       [ stateTopic="stat/T1-3-107/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
    }
+  Thing topic i_bathroom "I-Bathroom" @ "Home" {
+    Channels:
+      Type switch : PowerSwitch1  [ stateTopic="stat/SV--119/POWER1" , commandTopic="cmnd/SV--119/POWER1", on="ON", off="OFF"]
+      Type switch : PowerSwitch2  [ stateTopic="stat/SV--119/POWER2" , commandTopic="cmnd/SV--119/POWER2", on="ON", off="OFF"]
+      Type dimmer : SinkLight     [ stateTopic="stat/SV--119/RESULT" , commandTopic="cmnd/SV--119/Dimmer1" , transformationPattern="JSONPATH:$.Dimmer"]
+      Type string : Temperature   [ stateTopic="tele/SV--119/SENSOR" , transformationPattern="JSONPATH:$.SI7021.Temperature"]
+      Type string : Humidity      [ stateTopic="tele/SV--119/SENSOR" , transformationPattern="JSONPATH:$.SI7021.Humidity"]
+      Type string : DewPoint      [ stateTopic="tele/SV--119/SENSOR" , transformationPattern="JSONPATH:$.SI7021.DewPoint"]
+      Type switch : GetStatus     [ commandTopic="cmnd/SV--119/Status" , on="0", off=""]
+      Type string : Version       [ stateTopic="stat/SV--119/STATUS2" , transformationPattern="JSONPATH:$.StatusFWR.Version"]
+   }
   Thing topic g_dining_room "G-Dining-Room" @ "Home" {
     Channels:
       Type switch : PowerSwitch1  [ stateTopic="stat/T1-2-105/POWER1" , commandTopic="cmnd/T1-2-105/POWER1", on="ON", off="OFF"]
