@@ -12,6 +12,9 @@ sitemap liwia label="Liwia's Dash" {
          Switch item=T1_3_109_Switch_2 label="Main Light" icon="light"
          Switch item=T1_3_109_Switch_3 label="Sink Light" icon="light"
          Slider item=SV__119_Dimmer icon="slider" label="Sink brightness"
+         Text item=SV__119_Temperature label="Temperature: [%s °C]" icon="temperature"
+         Text item=SV__119_Humidity label="Humidity: [%s]" icon="humidity"
+         Text item=SV__119_DewPoint label="DewPoint: [%s °C]" icon="temperature"
       }
    }
    Frame label="Ground Floor" icon="groundfloor" {
