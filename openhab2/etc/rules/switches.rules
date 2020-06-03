@@ -31,6 +31,44 @@ then
     T1_3_109_Switch_1.sendCommand(ON)
 end
 
+rule "Enable bathroom sink light at sunset"
+when
+    Channel "astro:sun:local:set#event" triggered
+then
+    switch(receivedEvent.getEvent()) {
+        case "START": {
+            SV__119_Dimmer.sendCommand(60)
+        }
+    }
+end
+
+rule "Disable bathroom sink light at sunrise"
+when
+    Channel "astro:sun:local:rise#event" triggered
+then
+    switch(receivedEvent.getEvent()) {
+        case "START": {
+            SV__119_Switch_2.sendCommand(OFF)
+        }
+    }
+end
+
+
+
+rule "Test Switch"
+when
+    Item T1_3_107_Switch_1 changed from OFF
+then
+    SV__119_Dimmer.sendCommand(80)
+end
+
+rule "Test Switch2"
+when
+    Item T1_3_107_Switch_1 changed from ON
+then
+    SV__119_Switch_2.sendCommand(OFF)
+end
+
 //rule "Start wake up light on sunrise"
 //when
 //    Channel "astro:sun:local:rise#event" triggered
