@@ -53,31 +53,36 @@ sitemap marek label="Marek's Dash" {
          Text item=TH_16_101_DewPoint label="DewPoint: [%s °C]" icon="temperature"
       }
    }
-	Frame {
-		Text item=MareksPhone
-		Text item=MareksPhoneIP
-		Text item=MareksPhoneAP
-		Text item=MareksPhoneESSID
-		Text item=MareksPhoneRSSI
-		Text item=MareksPhoneUptime
-		Text item=MareksPhoneLastSeen
+	Frame label="Presence" icon="groundfloor" {
+      Text item=MareksPhone
+      Group item=dummy71 label="Marek's more..." {
+         Text item=MareksPhone
+         Text item=MareksPhoneIP
+         Text item=MareksPhoneAP
+         Text item=MareksPhoneESSID
+         Text item=MareksPhoneRSSI
+         Text item=MareksPhoneUptime
+         Text item=MareksPhoneLastSeen
+      }
+      Text item=LiwiasPhone
+      Group item=dummy72 label="Liwia's more..." {
+         Text item=LiwiasPhone
+         Text item=LiwiasPhoneIP
+         Text item=LiwiasPhoneAP
+         Text item=LiwiasPhoneESSID
+         Text item=LiwiasPhoneRSSI
+         Text item=LiwiasPhoneUptime
+         Text item=LiwiasPhoneLastSeen
+      }
+      Text item=WeynisPhone
+      Group item=dummy72 label="Weyni's more..." {
+         Text item=WeynisPhone
+         Text item=WeynisPhoneIP
+         Text item=WeynisPhoneAP
+         Text item=WeynisPhoneESSID
+         Text item=WeynisPhoneRSSI
+         Text item=WeynisPhoneUptime
+         Text item=WeynisPhoneLastSeen
+      }
 	}
-        Frame {
-                Text item=LiwiasPhone
-                Text item=LiwiasPhoneIP
-                Text item=LiwiasPhoneAP
-                Text item=LiwiasPhoneESSID
-                Text item=LiwiasPhoneRSSI
-                Text item=LiwiasPhoneUptime
-                Text item=LiwiasPhoneLastSeen
-        }
-        Frame {
-                Text item=WeynisPhone
-                Text item=WeynisPhoneIP
-                Text item=WeynisPhoneAP
-                Text item=WeynisPhoneESSID
-                Text item=WeynisPhoneRSSI
-                Text item=WeynisPhoneUptime
-                Text item=WeynisPhoneLastSeen
-        }
 }
