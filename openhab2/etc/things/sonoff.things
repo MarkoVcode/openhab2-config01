@@ -51,10 +51,11 @@ Bridge mqtt:broker:defaultbroker [ host="localhost", secure=false, username="", 
    }
   Thing topic g_dining_room_curtain "G-Dining-Room-Curtain" @ "Home" {
     Channels:
-      Type switch : Open          [ stateTopic="stat/Dual--122/POWER1" , commandTopic="cmnd/Dual--122/POWER1", on="ON", off="OFF"]
-      Type switch : Close         [ stateTopic="stat/Dual--122/POWER2" , commandTopic="cmnd/Dual--122/POWER2", on="ON", off="OFF"]
-      Type switch : GetStatus     [ commandTopic="cmnd/Dual--122/Status", on="0", off=""]
-      Type string : Version       [ stateTopic="stat/Dual--122/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
+      Type switch : Open          [ stateTopic="stat/WFCS-2-130/POWER2" , commandTopic="cmnd/WFCS-2-130/POWER2", on="ON", off="OFF"]
+      Type switch : Close         [ stateTopic="stat/WFCS-2-130/POWER1" , commandTopic="cmnd/WFCS-2-130/POWER1", on="ON", off="OFF"]
+      Type switch : Stop          [ stateTopic="stat/WFCS-2-130/POWER3" , commandTopic="cmnd/WFCS-2-130/POWER3", on="ON", off="OFF"]
+      Type switch : GetStatus     [ commandTopic="cmnd/WFCS-2-130/Status", on="0", off=""]
+      Type string : Version       [ stateTopic="stat/WFCS-2-130/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
    }
   Thing topic g_bathroom "G-Bathroom" @ "Home" {
     Channels:

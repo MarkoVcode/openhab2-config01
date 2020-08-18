@@ -31,24 +31,32 @@ then
     T1_3_109_Switch_1.sendCommand(ON)
 end
 
-rule "Enable bathroom sink light at sunset"
+rule "Operations at sunset"
 when
     Channel "astro:sun:local:set#event" triggered
 then
     switch(receivedEvent.getEvent()) {
         case "START": {
+            //bathroom sink light
             SV__119_Dimmer.sendCommand(50)
+            //ground front window curtain
+            //ground back door curtain
+            WFCS_2_130_Close.sendCommand(ON)
         }
     }
 end
 
-rule "Disable bathroom sink light at sunrise"
+rule "Operations at sunrise"
 when
     Channel "astro:sun:local:rise#event" triggered
 then
     switch(receivedEvent.getEvent()) {
         case "START": {
+            //bathroom sink light
             SV__119_Switch_2.sendCommand(OFF)
+            //ground front window curtain
+            //ground back door curtain
+            WFCS_2_130_Open.sendCommand(ON)
         }
     }
 end

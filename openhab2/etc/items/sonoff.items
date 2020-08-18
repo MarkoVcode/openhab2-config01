@@ -60,7 +60,8 @@ String   SV__119_DewPoint       "DewPoint: [%s]"                           { cha
 Switch   SV__119_GetStatus      "Status [%s]"                              { channel="mqtt:topic:defaultbroker:i_bathroom:GetStatus" }
 String   SV__119_Version        "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:i_bathroom:Version" }
 
-Switch   Dual__122_Open         "Curtain Open [%s]"                        { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:Open" }
-Switch   Dual__122_Close        "Curtain Close [%s]"                       { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:Close" }
-Switch   Dual__122_GetStatus    "Status [%s]"                              { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:GetStatus" }
-String   Dual__122_Version      "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:Version" }
+Switch   WFCS_2_130_Open        "Curtain Open [%s]"                        { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:Open" }
+Switch   WFCS_2_130_Close       "Curtain Close [%s]"                       { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:Close" }
+Switch   WFCS_2_130_Stop        "Curtain Stop [%s]"                        { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:Stop" }
+Switch   WFCS_2_130_GetStatus   "Status [%s]"                              { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:GetStatus" }
+String   WFCS_2_130_Version     "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:Version" }
