@@ -48,6 +48,7 @@ Bridge mqtt:broker:defaultbroker [ host="localhost", secure=false, username="", 
       Type switch : PowerSwitch2  [ stateTopic="stat/T1-2-105/POWER2" , commandTopic="cmnd/T1-2-105/POWER2", on="ON", off="OFF"]
       Type switch : GetStatus     [ commandTopic="cmnd/T1-2-105/Status", on="0", off=""]
       Type string : Version       [ stateTopic="stat/T1-2-105/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
+      Type string : IP            [ stateTopic="stat/T1-2-105/STATUS5", transformationPattern="JSONPATH:$.StatusNET.IPAddress"]
    }
   Thing topic g_dining_room_curtain "G-Dining-Room-Curtain" @ "Home" {
     Channels:
