@@ -25,8 +25,11 @@ sitemap liwia label="Liwia's Dash" {
          Switch item=Dual__102_Switch_2 label="Mains Socket CH2" icon="light"
       }
       Group item=dummy32 label="Dining Room" icon="kitchen" {
-         Switch item=T1_2_105_Switch_1 label="Main Light" icon="light"
-         Switch item=T1_2_105_Switch_2 label="Mood Light" icon="light"
+         Switch item=T1_2_105_Switch_2 label="Main Light" icon="light"
+         Switch item=T1_2_105_Switch_1 label="Mood Light" icon="light"
+         Switch item=WFCS_2_130_Open label="Open Curtain" icon="blinds"
+         Switch item=WFCS_2_130_Stop label="Stop Curtain" icon="blinds"
+         Switch item=WFCS_2_130_Close label="Close Curtain" icon="blinds"
       }
       Group item=dummy31 label="Kitchen" icon="kitchen" {
          Text item=TH_16_101_Temperature label="Temperature: [%s °C]" icon="temperature"
