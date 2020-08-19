@@ -92,7 +92,7 @@ Bridge mqtt:broker:defaultbroker [ host="localhost", secure=false, username="", 
       Type string : Version       [ stateTopic="stat/Dual--102/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
    }
 
-  Thing topic portable_lamp "Portable-Lamp" @ "Home" {
+  Thing topic big_portable_lamp "Portable-Lamp" @ "Home" {
     Channels:
       Type switch : PowerSwitch1  [ stateTopic="stat/D1--126/POWER1" , commandTopic="cmnd/D1--126/POWER1", on="ON", off="OFF"]
       Type dimmer : Brightness    [ stateTopic="stat/D1--126/RESULT" , commandTopic="cmnd/D1--126/Dimmer1" , transformationPattern="JSONPATH:$.Dimmer"]
