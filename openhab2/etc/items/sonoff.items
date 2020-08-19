@@ -61,12 +61,6 @@ String   SV__119_DewPoint       "DewPoint: [%s]"                           { cha
 Switch   SV__119_GetStatus      "Status [%s]"                              { channel="mqtt:topic:defaultbroker:i_bathroom:GetStatus" }
 String   SV__119_Version        "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:i_bathroom:Version" }
 
-Switch   D1__126_Switch_1       "Switch-1 [%s]"                            { channel="mqtt:topic:defaultbroker:big_portable_lamp:PowerSwitch1" }
-Dimmer   D1__126_Dimmer         "Brightness [%s]"                          { channel="mqtt:topic:defaultbroker:big_portable_lamp:Dimmer" }
-Switch   D1__126_GetStatus      "Status [%s]"                              { channel="mqtt:topic:defaultbroker:big_portable_lamp:GetStatus" }
-String   D1__126_Version        "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:big_portable_lamp:Version" }
-String   D1__126_IP             "IP: [%s]"                                 { channel="mqtt:topic:defaultbroker:big_portable_lamp:IP" }
-
 Switch   WFCS_2_130_Open        "Curtain Open [%s]"                        { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:Open" }
 Switch   WFCS_2_130_Close       "Curtain Close [%s]"                       { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:Close" }
 Switch   WFCS_2_130_Stop        "Curtain Stop [%s]"                        { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:Stop" }
