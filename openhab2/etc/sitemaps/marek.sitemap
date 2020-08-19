@@ -4,7 +4,7 @@ sitemap marek label="Marek's Dash" {
       Text item=NorthernLine label="Northern Line [%s]"
    }
    Frame label="1st Floor" icon="firstfloor" {
-      Group label="Corridor" icon="corridor" {
+      Group item=T1_3_109_Switch_1 label="Corridor" icon="corridor" {
          Switch item=T1_3_109_Switch_1 label="Automated Light" icon="light"
          Text item=TH_16_113_Temperature label="Temperature: [%s °C]" icon="temperature"
          Text item=TH_16_113_Humidity label="Humidity: [%s]" icon="humidity"
