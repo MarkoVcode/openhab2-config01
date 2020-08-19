@@ -4,7 +4,7 @@ sitemap marek label="Marek's Dash" {
       Text item=NorthernLine label="Northern Line [%s]"
    }
    Frame label="1st Floor" icon="firstfloor" {
-      Group item=T1_3_109_Switch_1 label="Corridor" icon="corridor" {
+      Group item=TH_16_113_Temperature label="Corridor" icon="corridor" {
          Switch item=T1_3_109_Switch_1 label="Automated Light" icon="light"
          Text item=TH_16_113_Temperature label="Temperature: [%s °C]" icon="temperature"
          Text item=TH_16_113_Humidity label="Humidity: [%s]" icon="humidity"
@@ -12,7 +12,7 @@ sitemap marek label="Marek's Dash" {
          Slider item=TR_1_BackLight label="Back Light" icon="slider"
          Slider item=TR_1_ExternalLight label="Ext Light" icon="slider"
       }
-      Group item=dummy2 label="Bathroom" icon="bath" {
+      Group item=SV__119_Temperature label="Bathroom" icon="bath" {
          Switch item=T1_3_109_Switch_2 label="Main Light" icon="light"
          Switch item=T1_3_109_Switch_3 label="Sink Light" icon="light"
          Slider item=SV__119_Dimmer icon="slider" label="Sink brightness"
@@ -30,7 +30,7 @@ sitemap marek label="Marek's Dash" {
          Switch item=T1_3_107_Switch_2 label="Desk Ligths" icon="light"
          Switch item=T1_3_107_Switch_3 label="Aux Lights" icon="light"
       }
-      Group item=dummy20 label="Addams Family" icon="energy" {
+      Group item=TransliteAddamsSwitch_MainSwitch label="Addams Family Trslte" icon="energy" {
          Switch item=TransliteAddamsSwitch_MainSwitch icon="light" label="Translite power"
       }
    }
@@ -49,15 +49,14 @@ sitemap marek label="Marek's Dash" {
          Switch item=WFCS_2_130_Stop label="Stop Curtain" icon="blinds"
          Switch item=WFCS_2_130_Close label="Close Curtain" icon="blinds"
       }
-      Group item=dummy31 label="Kitchen" icon="kitchen" {
+      Group item=TH_16_101_Temperature label="Kitchen" icon="kitchen" {
          Text item=TH_16_101_Temperature label="Temperature: [%s °C]" icon="temperature"
          Text item=TH_16_101_Humidity label="Humidity: [%s]" icon="humidity"
          Text item=TH_16_101_DewPoint label="DewPoint: [%s °C]" icon="temperature"
       }
    }
 	Frame label="Presence" icon="groundfloor" {
-      Text item=MareksPhone
-      Group item=dummy71 label="Marek's more..." {
+      Group item=MareksPhone label="Marek's more..." {
          Text item=MareksPhone
          Text item=MareksPhoneIP
          Text item=MareksPhoneAP
@@ -66,8 +65,7 @@ sitemap marek label="Marek's Dash" {
          Text item=MareksPhoneUptime
          Text item=MareksPhoneLastSeen
       }
-      Text item=LiwiasPhone
-      Group item=dummy72 label="Liwia's more..." {
+      Group item=LiwiasPhone label="Liwia's more..." {
          Text item=LiwiasPhone
          Text item=LiwiasPhoneIP
          Text item=LiwiasPhoneAP
@@ -76,8 +74,7 @@ sitemap marek label="Marek's Dash" {
          Text item=LiwiasPhoneUptime
          Text item=LiwiasPhoneLastSeen
       }
-      Text item=WeynisPhone
-      Group item=dummy72 label="Weyni's more..." {
+      Group item=WeynisPhone label="Weyni's more..." {
          Text item=WeynisPhone
          Text item=WeynisPhoneIP
          Text item=WeynisPhoneAP
