@@ -67,11 +67,11 @@ Bridge mqtt:broker:defaultbroker [ host="localhost", secure=false, username="", 
 
  Thing topic big_portable_lamp "PortableLamp" @ "Home" {
     Channels:
-      Type switch : PowerSwitch   [ stateTopic="stat/D1--126/POWER1" , commandTopic="cmnd/D1--126/POWER1", on="ON", off="OFF"]
+      Type switch : PowerSwitch1  [ stateTopic="stat/D1--126/POWER1" , commandTopic="cmnd/D1--126/POWER1", on="ON", off="OFF"]
       Type dimmer : Dimmer        [ stateTopic="stat/D1--126/RESULT" , commandTopic="cmnd/D1--126/Dimmer1" , transformationPattern="JSONPATH:$.Dimmer"]
       Type switch : GetStatus     [ commandTopic="cmnd/D1--126/Status" , on="0", off=""]
       Type string : Version       [ stateTopic="stat/D1--126/STATUS2" , transformationPattern="JSONPATH:$.StatusFWR.Version"]
-      Type string : IP            [ stateTopic="stat/D1--126/STATUS5", transformationPattern="JSONPATH:$.StatusNET.IPAddress"]
+      Type string : IP            [ stateTopic="stat/D1--126/STATUS5" , transformationPattern="JSONPATH:$.StatusNET.IPAddress"]
    }
 
   Thing topic th16_01 "Kitchen" @ "Home" {
