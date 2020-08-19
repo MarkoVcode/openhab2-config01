@@ -1,4 +1,5 @@
 ON=Home
 OFF=Away
-NULL=-
+NULL=n/a
+-=n/a
 
