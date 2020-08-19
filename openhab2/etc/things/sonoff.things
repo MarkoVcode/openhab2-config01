@@ -84,12 +84,20 @@ Bridge mqtt:broker:defaultbroker [ host="localhost", secure=false, username="", 
       Type string : Version       [ stateTopic="stat/TH-16-113/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
    }
 
-
   Thing topic dual_01 "G-Sockets-Window" @ "Home" {
     Channels:
       Type switch : PowerSwitch1  [ stateTopic="stat/Dual--102/POWER1" , commandTopic="cmnd/Dual--102/POWER1", on="ON", off="OFF"]
       Type switch : PowerSwitch2  [ stateTopic="stat/Dual--102/POWER2" , commandTopic="cmnd/Dual--102/POWER2", on="ON", off="OFF"]
       Type switch : GetStatus     [ commandTopic="cmnd/Dual--102/Status", on="0", off=""]
       Type string : Version       [ stateTopic="stat/Dual--102/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
+   }
+
+  Thing topic big_portable_lamp "Portable-Lamp" @ "Home" {
+    Channels:
+      Type switch : PowerSwitch1  [ stateTopic="stat/D1--126/POWER1" , commandTopic="cmnd/D1--126/POWER1", on="ON", off="OFF"]
+      Type dimmer : Dimmer        [ stateTopic="stat/D1--126/RESULT" , commandTopic="cmnd/D1--126/Dimmer1" , transformationPattern="JSONPATH:$.Dimmer"]
+      Type switch : GetStatus     [ commandTopic="cmnd/D1--126/Status" , on="0", off=""]
+      Type string : Version       [ stateTopic="stat/D1--126/STATUS2" , transformationPattern="JSONPATH:$.StatusFWR.Version"]
+      Type string : IP            [ stateTopic="stat/D1--126/STATUS5" , transformationPattern="JSONPATH:$.StatusNET.IPAddress"]
    }
 }
