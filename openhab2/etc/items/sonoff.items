@@ -62,7 +62,7 @@ Switch   SV__119_GetStatus      "Status [%s]"                              { cha
 String   SV__119_Version        "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:i_bathroom:Version" }
 
 Switch   D1__126_Switch_1       "Switch-1 [%s]"                            { channel="mqtt:topic:defaultbroker:big_portable_lamp:PowerSwitch1" }
-Dimmer   D1__126_Brightness     "Brightness [%s]"                          { channel="mqtt:topic:defaultbroker:big_portable_lamp:Brightness" }
+Dimmer   D1__126_Dimmer         "Brightness [%s]"                          { channel="mqtt:topic:defaultbroker:big_portable_lamp:Brightness" }
 Switch   D1__126_GetStatus      "Status [%s]"                              { channel="mqtt:topic:defaultbroker:big_portable_lamp:GetStatus" }
 String   D1__126_Version        "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:big_portable_lamp:Version" }
 String   D1__126_IP             "IP: [%s]"                                 { channel="mqtt:topic:defaultbroker:big_portable_lamp:IP" }
