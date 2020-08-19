@@ -57,6 +57,11 @@ then
             //ground front window curtain
             //ground back door curtain
             WFCS_2_130_Open.sendCommand(ON)
+            //Switch off the lights ground floor - in case they are on
+            T1_3_108_Switch_1.sendCommand(OFF)
+            T1_3_108_Switch_2.sendCommand(OFF)
+            T1_2_105_Switch_1.sendCommand(OFF)
+            D1__126_Switch_1.sendCommand(OFF)
         }
     }
 end

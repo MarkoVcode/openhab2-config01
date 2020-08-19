@@ -51,6 +51,7 @@ Switch   Dual__102_Switch_1     "Switch-1 [%s]"                            { cha
 Switch   Dual__102_Switch_2     "Switch-2 [%s]"                            { channel="mqtt:topic:defaultbroker:dual_01:PowerSwitch2" }
 Switch   Dual__102_GetStatus    "Status [%s]"                              { channel="mqtt:topic:defaultbroker:dual_01:GetStatus" }
 String   Dual__102_Version      "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:dual_01:Version" }
+String   Dual__102_IP           "IP: [%s]"                                 { channel="mqtt:topic:defaultbroker:dual_01:IP" }
 
 Switch   SV__119_Switch_1       "Switch-1 [%s]"                            { channel="mqtt:topic:defaultbroker:i_bathroom:PowerSwitch1" }
 Switch   SV__119_Switch_2       "Switch-2 [%s]"                            { channel="mqtt:topic:defaultbroker:i_bathroom:PowerSwitch2" }
@@ -60,6 +61,7 @@ String   SV__119_Humidity       "Humidity: [%s]"                           { cha
 String   SV__119_DewPoint       "DewPoint: [%s]"                           { channel="mqtt:topic:defaultbroker:i_bathroom:DewPoint" }
 Switch   SV__119_GetStatus      "Status [%s]"                              { channel="mqtt:topic:defaultbroker:i_bathroom:GetStatus" }
 String   SV__119_Version        "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:i_bathroom:Version" }
+String   SV__119_IP             "IP: [%s]"                                 { channel="mqtt:topic:defaultbroker:i_bathroom:IP" }
 
 Switch   D1__126_Switch_1       "Switch-1 [%s]"                            { channel="mqtt:topic:defaultbroker:big_portable_lamp:PowerSwitch1" }
 Dimmer   D1__126_Dimmer         "Brightness [%s]"                          { channel="mqtt:topic:defaultbroker:big_portable_lamp:Brightness" }
@@ -72,3 +74,4 @@ Switch   WFCS_2_130_Close       "Curtain Close [%s]"                       { cha
 Switch   WFCS_2_130_Stop        "Curtain Stop [%s]"                        { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:Stop" }
 Switch   WFCS_2_130_GetStatus   "Status [%s]"                              { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:GetStatus" }
 String   WFCS_2_130_Version     "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:Version" }
+String   WFCS_2_130_IP          "IP: [%s]"                                 { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:IP" }

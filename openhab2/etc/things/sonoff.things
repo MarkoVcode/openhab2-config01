@@ -41,6 +41,7 @@ Bridge mqtt:broker:defaultbroker [ host="localhost", secure=false, username="", 
       Type string : DewPoint      [ stateTopic="tele/SV--119/SENSOR" , transformationPattern="JSONPATH:$.SI7021.DewPoint"]
       Type switch : GetStatus     [ commandTopic="cmnd/SV--119/Status" , on="0", off=""]
       Type string : Version       [ stateTopic="stat/SV--119/STATUS2" , transformationPattern="JSONPATH:$.StatusFWR.Version"]
+      Type string : IP            [ stateTopic="stat/SV--119/STATUS5", transformationPattern="JSONPATH:$.StatusNET.IPAddress"]
    }
   Thing topic g_dining_room "G-Dining-Room" @ "Home" {
     Channels:
@@ -57,7 +58,9 @@ Bridge mqtt:broker:defaultbroker [ host="localhost", secure=false, username="", 
       Type switch : Stop          [ stateTopic="stat/WFCS-2-130/POWER3" , commandTopic="cmnd/WFCS-2-130/POWER3", on="ON", off="OFF"]
       Type switch : GetStatus     [ commandTopic="cmnd/WFCS-2-130/Status", on="0", off=""]
       Type string : Version       [ stateTopic="stat/WFCS-2-130/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
+      Type string : IP            [ stateTopic="stat/WFCS-2-130/STATUS5", transformationPattern="JSONPATH:$.StatusNET.IPAddress"]
    }
+
   Thing topic g_bathroom "G-Bathroom" @ "Home" {
     Channels:
       Type switch : PowerSwitch1  [ stateTopic="stat/T1-1-104/POWER1" , commandTopic="cmnd/T1-1-104/POWER1", on="ON", off="OFF"]
@@ -90,6 +93,7 @@ Bridge mqtt:broker:defaultbroker [ host="localhost", secure=false, username="", 
       Type switch : PowerSwitch2  [ stateTopic="stat/Dual--102/POWER2" , commandTopic="cmnd/Dual--102/POWER2", on="ON", off="OFF"]
       Type switch : GetStatus     [ commandTopic="cmnd/Dual--102/Status", on="0", off=""]
       Type string : Version       [ stateTopic="stat/Dual--102/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
+      Type string : IP            [ stateTopic="stat/Dual--102/STATUS5" , transformationPattern="JSONPATH:$.StatusNET.IPAddress"]
    }
 
   Thing topic big_portable_lamp "Portable-Lamp" @ "Home" {
