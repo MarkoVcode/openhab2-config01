@@ -20,12 +20,12 @@ sitemap marek label="Marek's Dash" {
          Text item=SV__119_Humidity label="Humidity: [%s]" icon="humidity"
          Text item=SV__119_DewPoint label="DewPoint: [%s °C]" icon="temperature"
       }
-      Group item=dummy10 label="Bedroom" icon="bedroom" {
+      Group item=T1_3_106_Switch_1 label="Bedroom" icon="bedroom" {
          Switch item=T1_3_106_Switch_1 label="Main Light" icon="light"
          Switch item=T1_3_106_Switch_2 label="Wall Lights" icon="light"
          Switch item=T1_3_106_Switch_3 label="Night Light" icon="light"
       }
-      Group item=dummy11 label="Lab" icon="bedroom" {
+      Group item=T1_3_107_Switch_1 label="Lab" icon="bedroom" {
          Switch item=T1_3_107_Switch_1 label="Main Light" icon="light"
          Switch item=T1_3_107_Switch_2 label="Desk Ligths" icon="light"
          Switch item=T1_3_107_Switch_3 label="Aux Lights" icon="light"
@@ -35,13 +35,15 @@ sitemap marek label="Marek's Dash" {
       }
    }
    Frame label="Ground Floor" icon="groundfloor" {
-      Group item=dummy3 label="Living Room" icon="groundfloor" {
+      Group item=T1_3_108_Switch_1 label="Living Room" icon="groundfloor" {
          Switch item=T1_3_108_Switch_1 label="Main Light" icon="light"
          Switch item=T1_3_108_Switch_2 label="Night Light" icon="light"
          Switch item=Dual__102_Switch_1 label="Mains Socket CH1" icon="light"
          Switch item=Dual__102_Switch_2 label="Mains Socket CH2" icon="light"
+         Switch item=D1__126_Switch_1 label="Mood Light" icon="light"
+         Slider item=D1__126_Dimmer icon="slider" label="Mood Light Bright"
       }
-      Group item=dummy32 label="Dining Room" icon="kitchen" {
+      Group item=T1_2_105_Switch_2 label="Dining Room" icon="kitchen" {
          Switch item=T1_2_105_Switch_2 label="Main Light" icon="light"
          Switch item=T1_2_105_Switch_1 label="UNUSED-NOW" icon="light"
          Switch item=D1__126_Switch_1 label="Mood Light" icon="light"
