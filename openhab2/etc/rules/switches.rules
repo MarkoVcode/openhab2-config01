@@ -86,6 +86,7 @@ then
             SV__119_Dimmer.sendCommand(50)
             //ground front window curtain
             //WFCS_2_131_Close.sendCommand(ON)
+            T1_3_112_Switch_2.sendCommand(ON)
             //ground back door curtain
             WFCS_2_130_Close.sendCommand(ON)
         }
@@ -102,6 +103,7 @@ then
             SV__119_Switch_2.sendCommand(OFF)
             //ground front window curtain
             //WFCS_2_130_Open.sendCommand(ON)
+            T1_3_112_Switch_1.sendCommand(ON)
             //ground back door curtain
             WFCS_2_130_Open.sendCommand(ON)
             //Switch off the lights ground floor - in case they are on
