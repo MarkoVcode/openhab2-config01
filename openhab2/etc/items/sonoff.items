@@ -27,13 +27,6 @@ Switch   T1_3_107_GetStatus     "Status [%s]"                              { cha
 String   T1_3_107_Version       "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:i_lab:Version" }
 String   T1_3_107_IP            "IP: [%s]"                                 { channel="mqtt:topic:defaultbroker:i_lab:IP" }
 
-Switch   T1_3_112_Switch_1      "Switch-1 [%s]"                            { channel="mqtt:topic:defaultbroker:curtain_front:PowerSwitch1" }
-Switch   T1_3_112_Switch_2      "Switch-2 [%s]"                            { channel="mqtt:topic:defaultbroker:curtain_front:PowerSwitch2" }
-Switch   T1_3_112_Switch_3      "Switch-3 [%s]"                            { channel="mqtt:topic:defaultbroker:curtain_front:PowerSwitch3" }
-Switch   T1_3_112_GetStatus     "Status [%s]"                              { channel="mqtt:topic:defaultbroker:curtain_front:GetStatus" }
-String   T1_3_112_Version       "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:curtain_front:Version" }
-String   T1_3_112_IP            "IP: [%s]"                                 { channel="mqtt:topic:defaultbroker:curtain_front:IP" }
-
 Switch   T1_2_105_Switch_1      "Switch-1 [%s]"                            { channel="mqtt:topic:defaultbroker:g_dining_room:PowerSwitch1" }
 Switch   T1_2_105_Switch_2      "Switch-2 [%s]"                            { channel="mqtt:topic:defaultbroker:g_dining_room:PowerSwitch2" }
 Switch   T1_2_105_GetStatus     "Status [%s]"                              { channel="mqtt:topic:defaultbroker:g_dining_room:GetStatus" }
@@ -89,3 +82,10 @@ Switch   WFCS_2_130_Stop        "Curtain Stop [%s]"                        { cha
 Switch   WFCS_2_130_GetStatus   "Status [%s]"                              { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:GetStatus" }
 String   WFCS_2_130_Version     "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:Version" }
 String   WFCS_2_130_IP          "IP: [%s]"                                 { channel="mqtt:topic:defaultbroker:g_dining_room_curtain:IP" }
+
+Switch   T1_3_112_Open          "Curtain Open [%s]"                        { channel="mqtt:topic:defaultbroker:g_sitting_room_curtain:PowerSwitch1" }
+Switch   T1_3_112_Close         "Curtain Close [%s]"                       { channel="mqtt:topic:defaultbroker:g_sitting_room_curtain:PowerSwitch2" }
+Switch   T1_3_112_Stop          "Curtain Stop [%s]"                        { channel="mqtt:topic:defaultbroker:g_sitting_room_curtain:PowerSwitch3" }
+Switch   T1_3_112_GetStatus     "Status [%s]"                              { channel="mqtt:topic:defaultbroker:g_sitting_room_curtain:GetStatus" }
+String   T1_3_112_Version       "Version: [%s]"                            { channel="mqtt:topic:defaultbroker:g_sitting_room_curtain:Version" }
+String   T1_3_112_IP            "IP: [%s]"                                 { channel="mqtt:topic:defaultbroker:g_sitting_room_curtain:IP" }

@@ -30,6 +30,9 @@ sitemap weyni label="Weyni's Dash" {
          Switch item=Dual__102_Switch_2 label="Mains Socket CH2" icon="light"
          Switch item=D1__126_Switch_1 label="Mood Light" icon="light"
          Slider item=D1__126_Dimmer icon="slider" label="Mood Light Bright"
+         Switch item=T1_3_112_Open label="Open Curtain" icon="blinds"
+         Switch item=T1_3_112_Stop label="Stop Curtain" icon="blinds"
+         Switch item=T1_3_112_Close label="Close Curtain" icon="blinds"
       }
       Group item=T1_2_105_Switch_2 label="Dining Room" icon="kitchen" {
          Switch item=T1_2_105_Switch_2 label="Main Light" icon="light"

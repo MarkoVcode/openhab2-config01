@@ -26,14 +26,14 @@ Bridge mqtt:broker:defaultbroker [ host="localhost", secure=false, username="", 
       Type string : Version       [ stateTopic="stat/T1-3-106/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
       Type string : IP            [ stateTopic="stat/T1-3-106/STATUS5", transformationPattern="JSONPATH:$.StatusNET.IPAddress"]
    }
-  Thing topic curtain_front "Curtain-Front" @ "Home" {
+  Thing topic g_sitting_room_curtain "G-Sitting-Room-Curtain" @ "Home" {
     Channels:
-      Type switch : PowerSwitch1  [ stateTopic="stat/T1-3-112/POWER1" , commandTopic="cmnd/T1-3-112/POWER1", on="ON", off="OFF"]
-      Type switch : PowerSwitch2  [ stateTopic="stat/T1-3-112/POWER2" , commandTopic="cmnd/T1-3-112/POWER2", on="ON", off="OFF"]
-      Type switch : PowerSwitch3  [ stateTopic="stat/T1-3-112/POWER3" , commandTopic="cmnd/T1-3-112/POWER3", on="ON", off="OFF"]
+      Type switch : Open          [ stateTopic="stat/T1-3-112/POWER1" , commandTopic="cmnd/T1-3-112/POWER1", on="ON", off="OFF"]
+      Type switch : Close         [ stateTopic="stat/T1-3-112/POWER2" , commandTopic="cmnd/T1-3-112/POWER2", on="ON", off="OFF"]
+      Type switch : Stop          [ stateTopic="stat/T1-3-112/POWER3" , commandTopic="cmnd/T1-3-112/POWER3", on="ON", off="OFF"]
       Type switch : GetStatus     [ commandTopic="cmnd/T1-3-112/Status", on="0", off=""]
       Type string : Version       [ stateTopic="stat/T1-3-112/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
-      Type string : IP            [ stateTopic="stat/T1-3-112q          /STATUS5", transformationPattern="JSONPATH:$.StatusNET.IPAddress"]
+      Type string : IP            [ stateTopic="stat/T1-3-112/STATUS5", transformationPattern="JSONPATH:$.StatusNET.IPAddress"]
    }
   Thing topic i_lab "I-Lab" @ "Home" {
     Channels:
