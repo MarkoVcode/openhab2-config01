@@ -89,6 +89,7 @@ then
             T1_3_112_Close.sendCommand(ON)
             //ground back door curtain
             WFCS_2_130_Close.sendCommand(ON)
+            D1__126_Dimmer.sendCommand(30)
         }
     }
 end
